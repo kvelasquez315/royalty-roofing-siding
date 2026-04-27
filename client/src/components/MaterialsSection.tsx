@@ -14,14 +14,6 @@ const LOGO_LP = "/manus-storage/logo-lp-smartside_a07c6201.webp";
 // LP SmartSide: wide horizontal logo — needs more width
 const MATERIALS = [
   {
-    logo: LOGO_PROVIA,
-    alt: "ProVia logo",
-    logoWidth: "180px",
-    name: "ProVia",
-    description:
-      "A premium vinyl and fiber cement siding manufacturer known for exceptional durability and an industry-leading warranty. ProVia products are engineered for the Midwest climate, built to handle hail, wind, and temperature swings without warping, fading, or cracking.",
-  },
-  {
     logo: LOGO_JAMES_HARDIE,
     alt: "James Hardie logo",
     logoWidth: "140px",
@@ -36,6 +28,14 @@ const MATERIALS = [
     name: "LP SmartSide",
     description:
       "Engineered wood siding that combines the natural look of wood with the durability of treated composite. LP SmartSide resists impact, moisture, and fungal decay, and is backed by a 50-year limited warranty. A great option for homeowners who want the warmth of wood without the upkeep.",
+  },
+  {
+    logo: LOGO_PROVIA,
+    alt: "ProVia logo",
+    logoWidth: "180px",
+    name: "ProVia",
+    description:
+      "A premium vinyl and fiber cement siding manufacturer known for exceptional durability and an industry-leading warranty. ProVia products are engineered for the Midwest climate, built to handle hail, wind, and temperature swings without warping, fading, or cracking.",
   },
 ];
 
