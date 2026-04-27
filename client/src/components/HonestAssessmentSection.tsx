@@ -1,8 +1,7 @@
 // "Why Royalty" section — id="why-royalty"
 // Full-width H2, then two-column: proof blocks left, photo right
 
-const ROOF_PHOTO =
-  "https://files.manuscdn.com/user_upload_by_module/session_file/310519663367059095/OMqfvJrRBGVxVfGd.webp";
+const SIDING_PHOTO = "/manus-storage/siding-project-1_bb408cd0.webp";
 
 const PROOF_BLOCKS = [
   {
@@ -155,7 +154,7 @@ export default function HonestAssessmentSection() {
           {/* RIGHT: Photo */}
           <div style={{ position: "relative" }}>
             <img
-              src={ROOF_PHOTO}
+              src={SIDING_PHOTO}
               alt="Royalty Roofing completed job"
               className="why-photo"
               style={{
