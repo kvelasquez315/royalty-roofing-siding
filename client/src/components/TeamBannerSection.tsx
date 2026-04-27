@@ -173,12 +173,16 @@ export default function TeamBannerSection() {
       </div>
       <style>{`
         @media (max-width: 900px) {
-          .team-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
+          .team-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+          .team-grid > div:first-child { padding: 0 !important; }
+          .team-photos { height: 360px !important; }
+          #team > div { padding: 0 20px !important; }
         }
         @media (max-width: 640px) {
           #team { padding: 56px 0 !important; }
+          #team > div { padding: 0 16px !important; }
           .team-photos { grid-template-columns: 1fr 1fr !important; gap: 10px !important; height: auto !important; }
-          .team-photos > div { aspect-ratio: 3/4; }
+          .team-photos > div { aspect-ratio: 3/4; height: auto !important; }
         }
       `}</style>
     </section>

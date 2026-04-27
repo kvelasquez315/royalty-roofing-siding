@@ -328,7 +328,7 @@ export default function EstimateForm({
         )}
       </div>
       <style>{`
-        @media (max-width: 480px) {
+        @media (max-width: 640px) {
           .form-two-col { grid-template-columns: 1fr !important; }
         }
       `}</style>

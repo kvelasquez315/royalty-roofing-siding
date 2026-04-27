@@ -89,12 +89,17 @@ export default function TrustBar() {
       </div>
       <style>{`
         @media (max-width: 640px) {
-          .stats-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 24px !important; }
-          .awards-inner { gap: 12px !important; }
-          .awards-inner img { height: 90px !important; }
+          section { padding: 40px 0 !important; }
+          .stats-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 20px !important; margin-bottom: 36px !important; }
+          .awards-inner { gap: 8px !important; }
+          .awards-inner img { height: 72px !important; }
+        }
+        @media (max-width: 380px) {
+          .awards-inner img { height: 58px !important; }
         }
         @media (min-width: 641px) and (max-width: 900px) {
           .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          .awards-inner img { height: 100px !important; }
         }
       `}</style>
     </section>

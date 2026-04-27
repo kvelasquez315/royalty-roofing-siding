@@ -171,11 +171,14 @@ export default function HonestAssessmentSection() {
       </div>
       <style>{`
         @media (max-width: 900px) {
-          .why-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
-          .why-photo { height: 320px !important; }
+          .why-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+          .why-photo { height: 280px !important; }
+          #why-royalty > div { padding: 0 20px !important; }
         }
         @media (max-width: 640px) {
           #why-royalty { padding: 56px 0 !important; }
+          #why-royalty > div { padding: 0 16px !important; }
+          .why-photo { height: 220px !important; }
         }
       `}</style>
     </section>

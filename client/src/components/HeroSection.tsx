@@ -228,14 +228,15 @@ export default function HeroSection() {
 
       <style>{`
         @media (max-width: 900px) {
-          .hero-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
-          .hero-form-col { display: block !important; }
+          .hero-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
+          .hero-form-col { display: none !important; }
           .hero-mobile-cta { display: flex !important; }
-          #hero { padding-top: 94px !important; }
+          #hero { padding-top: 90px !important; min-height: auto !important; }
+          .hero-grid { padding-bottom: 110px !important; }
         }
         @media (max-width: 480px) {
-          .hero-grid { padding: 20px 14px 100px !important; }
-          #hero { padding-top: 90px !important; }
+          .hero-grid { padding: 20px 16px 110px !important; }
+          #hero { padding-top: 84px !important; }
         }
       `}</style>
     </section>

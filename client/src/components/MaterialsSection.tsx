@@ -200,15 +200,17 @@ export default function MaterialsSection() {
         </div>
       </div>
       <style>{`
-        @media (max-width: 900px) {
-          .materials-grid { grid-template-columns: 1fr !important; gap: 14px !important; }
-        }
-        @media (min-width: 641px) and (max-width: 900px) {
-          .materials-grid { grid-template-columns: repeat(2, 1fr) !important; }
-        }
         @media (max-width: 640px) {
           #materials { padding: 56px 0 !important; }
           #materials > div { padding: 0 16px !important; }
+          .materials-grid { grid-template-columns: 1fr !important; gap: 14px !important; }
+        }
+        @media (min-width: 641px) and (max-width: 900px) {
+          .materials-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 16px !important; }
+          #materials > div { padding: 0 20px !important; }
+        }
+        @media (max-width: 900px) and (min-width: 641px) {
+          .materials-grid { grid-template-columns: repeat(2, 1fr) !important; }
         }
       `}</style>
     </section>

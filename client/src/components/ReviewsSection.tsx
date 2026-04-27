@@ -150,13 +150,13 @@ export default function ReviewsSection() {
       </div>
       <style>{`
         @media (max-width: 640px) {
-          #reviews { padding: 48px 0 !important; }
+          #reviews { padding: 56px 0 !important; }
           #reviews > div { padding: 0 16px !important; }
           #reviews .reviews-header { margin-bottom: 28px !important; }
           .reviews-grid { grid-template-columns: 1fr !important; gap: 14px !important; }
         }
         @media (min-width: 641px) and (max-width: 900px) {
-          .reviews-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          .reviews-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 16px !important; }
           #reviews > div { padding: 0 20px !important; }
         }
       `}</style>
