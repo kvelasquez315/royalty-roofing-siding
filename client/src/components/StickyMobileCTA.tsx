@@ -71,7 +71,7 @@ export default function StickyMobileCTA() {
           cursor: "pointer",
         }}
       >
-        GET FREE INSPECTION
+        GET FREE ESTIMATE
       </button>
     </div>
   );

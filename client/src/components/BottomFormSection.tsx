@@ -28,8 +28,8 @@ export default function BottomFormSection() {
               letterSpacing: "0.01em",
             }}
           >
-            SCHEDULE YOUR FREE ROOF INSPECTION AND GET AN HONEST{" "}
-            <span style={{ color: "#3D6CC0" }}>WRITTEN ASSESSMENT TODAY.</span>
+            SCHEDULE YOUR FREE SIDING ESTIMATE AND SEE WHAT YOUR{" "}
+            <span style={{ color: "#3D6CC0" }}>HOME COULD LOOK LIKE.</span>
           </h2>
           <p
             style={{
@@ -41,9 +41,9 @@ export default function BottomFormSection() {
               maxWidth: "480px",
             }}
           >
-            We'll come to your home, get on your roof, and give you a full written assessment of
-            what it needs. No obligation. No pressure. We tell you what it needs and what it costs.
-            Response within one business day.
+            We'll come to your home, assess your current siding, walk you through material and color
+            options, and give you a detailed written estimate. No obligation. No pressure. We tell
+            you what it needs and what it costs. Response within one business day.
           </p>
           <a
             href="tel:4022168850"
@@ -124,6 +124,7 @@ export default function BottomFormSection() {
           <EstimateForm
             variant="glass"
             headerText="Get Your Free Consultation"
+
             buttonText="GET MY FREE ESTIMATE"
           />
         </div>

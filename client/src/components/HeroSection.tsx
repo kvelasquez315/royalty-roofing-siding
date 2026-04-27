@@ -79,7 +79,7 @@ export default function HeroSection() {
               marginBottom: "16px",
             }}
           >
-            Omaha's Trusted Roofer Since 2010
+            Omaha's Trusted Siding Contractor Since 2010
           </p>
           <h1
             style={{
@@ -91,8 +91,8 @@ export default function HeroSection() {
               letterSpacing: "0.01em",
             }}
           >
-            WE INSPECT YOUR ROOF FOR FREE AND ONLY RECOMMEND A REPLACEMENT IF YOU{" "}
-            <span style={{ color: "#3D6CC0" }}>ACTUALLY NEED ONE.</span>
+            NEW SIDING CHANGES EVERYTHING ABOUT YOUR HOME.{" "}
+            <span style={{ color: "#3D6CC0" }}>WE MAKE SURE YOU GET IT RIGHT.</span>
           </h1>
           <p
             style={{
@@ -104,8 +104,9 @@ export default function HeroSection() {
               maxWidth: "540px",
             }}
           >
-            Repairs done right. Replacements only when necessary. We get out fast, tell you exactly
-            what your roof needs, and give you a fair price. No pressure, no obligation.
+            Whether you're upgrading your home's exterior, replacing storm-damaged panels, or just
+            ready for a change, we'll walk you through your options and give you a fair price. Free
+            estimates, no pressure.
           </p>
 
           {/* Trust badges */}
@@ -219,7 +220,7 @@ export default function HeroSection() {
         <div style={{ paddingBottom: "8px" }} className="hero-form-col">
           <EstimateForm
             variant="glass"
-            headerText="Get Your Free Roof Estimate"
+            headerText="Get Your Free Siding Estimate"
             buttonText="GET MY FREE ESTIMATE"
           />
         </div>

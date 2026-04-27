@@ -7,23 +7,23 @@ const ROOF_PHOTO =
 const PROOF_BLOCKS = [
   {
     num: "01",
-    title: "We're out fast",
-    body: "We don't make you wait weeks for a quote. We get to your home quickly, assess the situation, and give you a clear answer — usually within 24–48 hours.",
+    title: "We know siding materials inside and out",
+    body: "Fiber cement, LP SmartSide, vinyl, engineered wood. We've installed them all across hundreds of Omaha homes. We'll explain the real differences so you can make the right call for your home.",
   },
   {
     num: "02",
-    title: "We do repairs, not just replacements",
-    body: "A lot of companies push replacements when a repair is all you need. We'll tell you honestly what your roof requires and quote accordingly.",
+    title: "We'll tell you if your siding can be repaired",
+    body: "If a few panels need replacing or a section needs patching, we'll quote that instead of pushing a full re-side. If it does need full replacement, we'll explain exactly why.",
   },
   {
     num: "03",
-    title: "We handle your insurance claim",
-    body: "If you have storm damage, we work directly with your adjuster, document everything, and make sure you get what you're entitled to.",
+    title: "Storm damage? We handle the claim.",
+    body: "If your siding was damaged in a storm, we work directly with your insurance company from the first call to the final payment. You focus on picking what you want. We handle the paperwork.",
   },
   {
     num: "04",
-    title: "Written warranty on every job",
-    body: "Every job we do comes with a written workmanship warranty. You'll know exactly what's covered and for how long.",
+    title: "Every job backed by a written warranty",
+    body: "We stand behind our work. Every siding installation comes with a written workmanship warranty, plus the full manufacturer warranty on whatever material you choose.",
   },
 ];
 
@@ -46,8 +46,8 @@ export default function HonestAssessmentSection() {
             letterSpacing: "0.01em",
           }}
         >
-          WE COME TO YOUR HOME, GET ON YOUR ROOF, AND GIVE YOU A STRAIGHT ANSWER ABOUT WHAT IT{" "}
-          <span style={{ color: "#3D6CC0" }}>ACTUALLY NEEDS.</span>
+          WE WALK YOU THROUGH EVERY OPTION, HELP YOU PICK THE RIGHT MATERIAL, AND MAKE SURE THE INSTALL IS{" "}
+          <span style={{ color: "#3D6CC0" }}>DONE RIGHT.</span>
         </h2>
 
         {/* Two-column: proof left, photo right */}
@@ -72,8 +72,10 @@ export default function HonestAssessmentSection() {
                 maxWidth: "520px",
               }}
             >
-              We show up when we say we will, take on jobs of every size, and only recommend what
-              your roof actually needs. No upsells. No pressure.
+            Your siding is the first thing people notice about your home. We take that seriously.
+            We'll help you choose between fiber cement, vinyl, engineered wood, and other options
+            based on what fits your home, your style, and your budget. And if you have storm damage,
+            we handle the insurance process too.
             </p>
             <div>
               {PROOF_BLOCKS.map(({ num, title, body }) => (

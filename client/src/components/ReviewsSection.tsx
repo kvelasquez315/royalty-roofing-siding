@@ -82,7 +82,7 @@ export default function ReviewsSection() {
               letterSpacing: "0.01em",
             }}
           >
-            THOUSANDS OF OMAHA HOMEOWNERS HAVE TRUSTED US WITH THEIR ROOF AND{" "}
+            THOUSANDS OF OMAHA HOMEOWNERS HAVE TRUSTED US WITH THEIR HOME AND{" "}
             <span style={{ color: "#3D6CC0" }}>GIVEN US 4.9 STARS ON GOOGLE.</span>
           </h2>
         </div>

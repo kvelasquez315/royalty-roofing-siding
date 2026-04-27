@@ -41,9 +41,9 @@ export default function Navbar() {
       >
         <span className="hidden sm:inline">
           &#9733;&nbsp; BEST OF OMAHA: ROOFING &amp; SIDING, 7 YEARS RUNNING &nbsp;|&nbsp; FREE
-          ROOF INSPECTIONS &nbsp;|&nbsp; CERTIFIED ROOFING CONTRACTOR
+          SIDING ESTIMATES &nbsp;|&nbsp; CERTIFIED SIDING INSTALLER
         </span>
-        <span className="sm:hidden">&#9733; FREE ROOF INSPECTION &nbsp;|&nbsp; BEST OF OMAHA 7X</span>
+        <span className="sm:hidden">&#9733; FREE SIDING ESTIMATE &nbsp;|&nbsp; BEST OF OMAHA 7X</span>
       </div>
       {/* Main nav */}
       <nav
