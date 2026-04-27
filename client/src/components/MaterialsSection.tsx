@@ -1,23 +1,30 @@
-// MaterialsSection — white bg (matches HonestAssessmentSection alternation)
-// Placed between the value props CTA and the reviews section
-// Three-card grid: ProVia, James Hardie, LP SmartSide
-// Logo images are normalized to the same visual size via a fixed container
+// MaterialsSection — white bg
+// Centered headline + intro, three-card grid with logos visually equalized
+// No em dashes anywhere
 
 const LOGO_PROVIA = "/manus-storage/logo-provia_2fcfe0a7.webp";
 const LOGO_JAMES_HARDIE = "/manus-storage/logo-james-hardie_4b9e7ddf.webp";
 const LOGO_LP = "/manus-storage/logo-lp-smartside_a07c6201.webp";
 
+// Each logo has a different natural aspect ratio and visual weight.
+// We normalize perceived size by giving each a specific rendered width
+// so they all read as roughly the same visual footprint.
+// ProVia: wide horizontal logo — needs more width
+// James Hardie: square-ish stacked logo — needs less width
+// LP SmartSide: wide horizontal logo — needs more width
 const MATERIALS = [
   {
     logo: LOGO_PROVIA,
     alt: "ProVia logo",
+    logoWidth: "180px",
     name: "ProVia",
     description:
-      "A premium vinyl and fiber cement siding manufacturer known for exceptional durability and an industry-leading warranty. ProVia products are engineered for the Midwest climate — built to handle hail, wind, and temperature swings without warping, fading, or cracking.",
+      "A premium vinyl and fiber cement siding manufacturer known for exceptional durability and an industry-leading warranty. ProVia products are engineered for the Midwest climate, built to handle hail, wind, and temperature swings without warping, fading, or cracking.",
   },
   {
     logo: LOGO_JAMES_HARDIE,
     alt: "James Hardie logo",
+    logoWidth: "140px",
     name: "James Hardie",
     description:
       "The gold standard in fiber cement siding. James Hardie products are non-combustible, moisture-resistant, and backed by a 30-year warranty. HardiePlank and HardiePanel are among the most popular siding choices for Omaha homeowners looking for a long-term, low-maintenance solution.",
@@ -25,6 +32,7 @@ const MATERIALS = [
   {
     logo: LOGO_LP,
     alt: "LP SmartSide logo",
+    logoWidth: "200px",
     name: "LP SmartSide",
     description:
       "Engineered wood siding that combines the natural look of wood with the durability of treated composite. LP SmartSide resists impact, moisture, and fungal decay, and is backed by a 50-year limited warranty. A great option for homeowners who want the warmth of wood without the upkeep.",
@@ -39,35 +47,35 @@ export default function MaterialsSection() {
   return (
     <section id="materials" style={{ background: "#ffffff", padding: "96px 0" }}>
       <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 28px" }}>
-        {/* Headline */}
-        <h2
-          style={{
-            fontFamily: "var(--font-display)",
-            fontSize: "clamp(44px, 6vw, 80px)",
-            lineHeight: 0.93,
-            color: "#0A1220",
-            margin: "0 0 20px",
-            letterSpacing: "0.01em",
-          }}
-        >
-          EVERY HOME IS DIFFERENT.{" "}
-          <span style={{ color: "#3D6CC0" }}>WE'LL HELP YOU PICK THE RIGHT MATERIAL.</span>
-        </h2>
-
-        {/* Intro line */}
-        <p
-          style={{
-            fontFamily: "var(--font-body)",
-            fontSize: "17px",
-            color: "#374151",
-            lineHeight: 1.75,
-            marginBottom: "48px",
-            maxWidth: "680px",
-          }}
-        >
-          We install the three most trusted siding brands in the industry. Here's what makes each
-          one different — and why the right choice depends on your home, your goals, and your budget.
-        </p>
+        {/* Centered headline + intro */}
+        <div style={{ textAlign: "center", marginBottom: "56px" }}>
+          <h2
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(44px, 6vw, 80px)",
+              lineHeight: 0.93,
+              color: "#0A1220",
+              margin: "0 0 20px",
+              letterSpacing: "0.01em",
+            }}
+          >
+            EVERY HOME IS DIFFERENT.{" "}
+            <span style={{ color: "#3D6CC0" }}>WE'LL HELP YOU PICK THE RIGHT MATERIAL.</span>
+          </h2>
+          <p
+            style={{
+              fontFamily: "var(--font-body)",
+              fontSize: "17px",
+              color: "#374151",
+              lineHeight: 1.75,
+              maxWidth: "640px",
+              margin: "0 auto",
+            }}
+          >
+            We install the three most trusted siding brands in the industry. Here's what makes each
+            one different and why the right choice depends on your home, your goals, and your budget.
+          </p>
+        </div>
 
         {/* Three-card grid */}
         <div
@@ -79,37 +87,36 @@ export default function MaterialsSection() {
             marginBottom: "48px",
           }}
         >
-          {MATERIALS.map(({ logo, alt, name, description }) => (
+          {MATERIALS.map(({ logo, alt, logoWidth, name, description }) => (
             <div
               key={name}
               style={{
                 background: "#ffffff",
                 borderRadius: "8px",
-                padding: "28px",
+                padding: "32px 28px 28px",
                 boxShadow: "0 1px 3px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.06)",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "flex-start",
               }}
             >
-              {/* Logo container — fixed height, centered, consistent visual weight */}
+              {/* Logo container — fixed height, centered, logos sized individually for visual parity */}
               <div
                 style={{
                   width: "100%",
-                  height: "64px",
+                  height: "80px",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  marginBottom: "20px",
+                  marginBottom: "24px",
                 }}
               >
                 <img
                   src={logo}
                   alt={alt}
                   style={{
-                    maxHeight: "48px",
-                    maxWidth: "160px",
-                    width: "auto",
+                    width: logoWidth,
+                    maxWidth: "100%",
                     height: "auto",
                     objectFit: "contain",
                     display: "block",
@@ -146,7 +153,7 @@ export default function MaterialsSection() {
           ))}
         </div>
 
-        {/* CTA row */}
+        {/* CTA row — centered */}
         <div
           style={{
             display: "flex",
