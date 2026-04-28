@@ -2,9 +2,9 @@
 // Centered headline + intro, three-card grid with logos visually equalized
 // No em dashes anywhere
 
-const LOGO_PROVIA = "/manus-storage/logo-provia_2fcfe0a7.webp";
-const LOGO_JAMES_HARDIE = "/manus-storage/logo-james-hardie_4b9e7ddf.webp";
-const LOGO_LP = "/manus-storage/logo-lp-smartside_a07c6201.webp";
+const LOGO_PROVIA = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663367059095/XxgXDFdUhDAagvLw.webp";
+const LOGO_JAMES_HARDIE = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663367059095/YnePGBEIWqLQdqGG.webp";
+const LOGO_LP = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663367059095/fOWVtTYGxYiAAUbT.webp";
 
 // Each logo has a different natural aspect ratio and visual weight.
 // We normalize perceived size by giving each a specific rendered width

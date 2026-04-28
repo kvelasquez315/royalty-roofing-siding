@@ -2,13 +2,13 @@
 // Using uploaded user-provided award badge images
 
 const AWARDS = [
-  { year: "2020", src: "/manus-storage/award-2020-roofing_f52f5148.png", label: "Residential Roofing" },
-  { year: "2021", src: "/manus-storage/award-2021-siding_ebeed40b.png", label: "Residential Siding" },
-  { year: "2022", src: "/manus-storage/award-2022-siding_d9380aaa.png", label: "Residential Siding" },
-  { year: "2023", src: "/manus-storage/award-2023-roofing_ac38a7b3.png", label: "Residential Roofing" },
-  { year: "2024", src: "/manus-storage/award-2024-roofing_a77b0abb.png", label: "Residential Roofing" },
-  { year: "2025", src: "/manus-storage/award-2025-roofing_66aa0037.png", label: "Residential Roofing" },
-  { year: "2026", src: "/manus-storage/award-2026-siding_af401c4d.png", label: "Residential Siding" },
+  { year: "2020", src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663367059095/LlgtXsdprgaanGfx.png", label: "Residential Roofing" },
+  { year: "2021", src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663367059095/qNaULRMaZeqbsnzS.png", label: "Residential Siding" },
+  { year: "2022", src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663367059095/DmmzFGZOAccsoVOH.png", label: "Residential Siding" },
+  { year: "2023", src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663367059095/SbEPJazInjDalbJs.png", label: "Residential Roofing" },
+  { year: "2024", src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663367059095/QFHwvTQBvITWjmlm.png", label: "Residential Roofing" },
+  { year: "2025", src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663367059095/yhOuUVAwtgWfnxFV.png", label: "Residential Roofing" },
+  { year: "2026", src: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663367059095/TKdWIcNrgoiYUPXs.png", label: "Residential Siding" },
 ];
 
 const STATS = [

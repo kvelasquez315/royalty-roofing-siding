@@ -1,7 +1,7 @@
 // "Why Royalty" section — id="why-royalty"
 // Full-width H2, then two-column: proof blocks left, photo right
 
-const SIDING_PHOTO = "/manus-storage/siding-project-1_bb408cd0.webp";
+const SIDING_PHOTO = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663367059095/KFNOWJSlNBpwyTiA.webp";
 
 const PROOF_BLOCKS = [
   {

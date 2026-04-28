@@ -1,8 +1,8 @@
 // id="team" — AJ and David Velasquez, family-owned story
 // Using uploaded team photos
 
-const TEAM_1 = "/manus-storage/team-aj_1e8bc3ea.webp";
-const TEAM_2 = "/manus-storage/team-david_d77aa807.webp";
+const TEAM_1 = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663367059095/PGRmIAVopyryyJjg.webp";
+const TEAM_2 = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663367059095/TwjoMTfQFubmISik.webp";
 
 export default function TeamBannerSection() {
   return (
