@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Loader2 } from "lucide-react";
 
 const WEBHOOK_URL =
-  "https://services.leadconnectorhq.com/hooks/2HOx7nqhyy85pwGlIHvA/webhook-trigger/nl9HCf4tULqBC1DFj3uX";
+  "https://services.leadconnectorhq.com/hooks/2HOx7nqhyy85pwGlIHvA/webhook-trigger/NgGQTmvmBXN8knCe4mNw";
 
 interface EstimateFormProps {
   variant?: "glass" | "card";
