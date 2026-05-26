@@ -181,39 +181,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Mobile-only CTA */}
-          <a
-            href="tel:4022168850"
-            className="hero-mobile-cta"
-            style={{
-              display: "none",
-              marginTop: "28px",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: "10px",
-              background: "#3D6CC0",
-              color: "white",
-              fontFamily: "var(--font-body)",
-              fontWeight: 700,
-              fontSize: "18px",
-              padding: "16px 24px",
-              borderRadius: "10px",
-              textDecoration: "none",
-              letterSpacing: "0.02em",
-            }}
-          >
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-            </svg>
-            Call (402) 216-8850
-          </a>
+
         </div>
 
         {/* RIGHT: Form */}
@@ -228,9 +196,8 @@ export default function HeroSection() {
 
       <style>{`
         @media (max-width: 900px) {
-          .hero-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
-          .hero-form-col { display: none !important; }
-          .hero-mobile-cta { display: flex !important; }
+          .hero-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+          .hero-form-col { display: block !important; }
           #hero { padding-top: 90px !important; min-height: auto !important; }
           .hero-grid { padding-bottom: 110px !important; }
         }
