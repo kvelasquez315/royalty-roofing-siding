@@ -21,15 +21,12 @@ export default function EstimateForm({
     firstName: "",
     lastName: "",
     phone: "",
-    address: "",
-    consentMessages: false,
-    consentPrivacy: false,
   });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value, type, checked } = e.target;
-    setForm((prev) => ({ ...prev, [name]: type === "checkbox" ? checked : value }));
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -198,82 +195,7 @@ export default function EstimateForm({
             style={inputStyle}
           />
         </div>
-        {/* Address */}
-        <div>
-          <label style={labelStyle} htmlFor="address">
-            Address <span style={{ color: "#f87171" }}>*</span>
-          </label>
-          <input
-            id="address"
-            name="address"
-            type="text"
-            required
-            placeholder="Street address, Omaha, NE"
-            value={form.address}
-            onChange={handleChange}
-            style={inputStyle}
-          />
-        </div>
-        {/* Consents */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "10px",
-            padding: "4px 0",
-          }}
-        >
-          <label
-            style={{ display: "flex", alignItems: "flex-start", gap: "10px", cursor: "pointer" }}
-          >
-            <input
-              type="checkbox"
-              name="consentMessages"
-              checked={form.consentMessages}
-              onChange={handleChange}
-              style={{ marginTop: "2px", flexShrink: 0, width: "16px", height: "16px" }}
-            />
-            <span
-              style={{
-                fontSize: "12px",
-                color: isGlass ? "rgba(255,255,255,0.55)" : "#6B7280",
-                lineHeight: 1.5,
-              }}
-            >
-              By checking this box, I consent to receive transactional messages from Royalty Roofing
-              and Siding via SMS/text. Message and data rates may apply.
-            </span>
-          </label>
-          <label
-            style={{ display: "flex", alignItems: "flex-start", gap: "10px", cursor: "pointer" }}
-          >
-            <input
-              type="checkbox"
-              name="consentPrivacy"
-              checked={form.consentPrivacy}
-              onChange={handleChange}
-              style={{ marginTop: "2px", flexShrink: 0, width: "16px", height: "16px" }}
-            />
-            <span
-              style={{
-                fontSize: "12px",
-                color: isGlass ? "rgba(255,255,255,0.55)" : "#6B7280",
-                lineHeight: 1.5,
-              }}
-            >
-              I have read and agree to the{" "}
-              <a
-                href="https://royaltyroofing.org/privacy-policy"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: isGlass ? "#7aaaf0" : "#3D6CC0", textDecoration: "underline" }}
-              >
-                Privacy Policy
-              </a>
-              .
-            </span>
-          </label>
-        </div>
+
         {/* Submit */}
         <button
           type="submit"
